@@ -7,10 +7,9 @@ export default function Home() {
     <div className="p-4">
       <div>
         <h1 className="text-2xl font-bold mb-4 text-center">Welcome to Hidekipo.com</h1>
-        <p className="mb-2">
+        <p className="mb-2 text-center p-2">
           This is Kipo's personal website where I share my thoughts, projects, and more.
-        </p>
-        <p>
+          <br></br>
           Feel free to explore the site using the navigation menu above!
         </p>
       </div>
@@ -19,32 +18,30 @@ export default function Home() {
           <CardHeader>
             <CardTitle>本サイトについて</CardTitle>
             <CardDescription className="line-clamp-3">
-              目的：技術ブログ、ポートフォリオとしての役割とともに、コメント機能等を介して多くの読者と交流し、開発者同士で情報交換し合うハブとすること。
+              目的や内容の紹介です。
             </CardDescription>
           </CardHeader>
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle>製作者プロフィール</CardTitle>
-            <CardDescription>
-              名前：きぽ
-              仕事：求職中
-              スキル：JavaScript、Python、React、Node.jsなど
+            <CardTitle>プロフィール</CardTitle>
+            <CardDescription className="line-clamp-3">
+              名前、経歴、スキルの紹介です。
             </CardDescription>
           </CardHeader>
         </Card>
         <Card>
           <CardHeader>
             <CardTitle>ブログ</CardTitle>
-            <CardDescription>
+            <CardDescription className="line-clamp-3">
               記事一覧へのリンクです。
             </CardDescription>
           </CardHeader>
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle>ピックアッププロジェクト</CardTitle>
-            <CardDescription>
+            <CardTitle>プロジェクト</CardTitle>
+            <CardDescription className="line-clamp-3">
               代表的なプロジェクトの紹介です。
             </CardDescription>
           </CardHeader>
@@ -52,19 +49,21 @@ export default function Home() {
         <Card>
           <CardHeader>
             <CardTitle>お問い合わせ</CardTitle>
-            <CardDescription>
-              連絡先情報やお問い合わせフォームへのリンクです。
+            <CardDescription className="line-clamp-3">
+              連絡先やお問い合わせフォームへのリンクです。
             </CardDescription>
           </CardHeader>
         </Card>
         <Card>
           <CardHeader>
             <CardTitle>ご支援を頂ける方へ</CardTitle>
-            <CardDescription>
+            <CardDescription className="line-clamp-3">
               サイト運営のための支援方法についての案内です。
             </CardDescription>
           </CardHeader>
         </Card>
+      </div>
+      <div className="">
       </div>
     </div>
   );
