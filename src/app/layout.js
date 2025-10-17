@@ -8,6 +8,7 @@ import {
 } from "@radix-ui/react-navigation-menu";
 import { Separator } from "@/components/ui/separator";
 import BackToTopButton from "@/components/backToTopButton";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,7 +37,12 @@ export default function RootLayout({ children }) {
               <NavigationMenuList className="flex space-x-5">
                 <NavigationMenuItem>
                   <NavigationMenuLink href="/" className="hover:underline">
-                    <img src="/logo.png" alt="Hidekipo.com Logo" className="inline h-7 w-7 mr-2 mb-1" />
+                    <Image
+                      src="/logo.png"
+                      alt="Hidekipo.com Logo"
+                      width={32}
+                      height={32}
+                    />
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
