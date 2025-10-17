@@ -1,6 +1,4 @@
-import { Card, CardHeader, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
-
-
+import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 export default function Home() {
   return (
@@ -8,7 +6,7 @@ export default function Home() {
       <div>
         <h1 className="text-2xl font-bold mb-4 text-center">Welcome to Hidekipo.com</h1>
         <p className="mb-2 text-center p-2">
-          This is Kipo's personal website where I share my thoughts, projects, and more.
+          This is Kipo&apos;s personal website where I share my thoughts, projects, and more.
           <br></br>
           Feel free to explore the site using the navigation menu above!
         </p>
