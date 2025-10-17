@@ -7,6 +7,8 @@ import {
   NavigationMenuLink
 } from "@radix-ui/react-navigation-menu";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
+import BackToTopButton from "@/components/backToTopButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -56,8 +58,12 @@ export default function RootLayout({ children }) {
             {children}
           </main>
           <Separator className="m-3"></Separator>
-          <footer className="mt-10 text-sm text-gray-500">
-            © 2024 Hidekipo.com
+          <footer className="w-full border-t mt-10 py-4 flex items-center justify-between text-sm text-gray-500">
+            <p className="ml-4">© 2025 hidekipo.com<br></br>
+              Built with Next.js, Tailwind CSS, Shadcn/ui</p>
+            <div className="mr-4">
+              <BackToTopButton />
+            </div>
           </footer>
         </div>
       </body>

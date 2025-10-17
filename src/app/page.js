@@ -18,42 +18,50 @@ export default function Home() {
         <Card>
           <CardHeader>
             <CardTitle>本サイトについて</CardTitle>
-            <CardDescription className="line">目的：技術ブログ、ポートフォリオとしての役割とともに、コメント機能等を介して多くの読者と交流し、開発者同士で情報交換し合うハブとすること。
+            <CardDescription className="line-clamp-3">
+              目的：技術ブログ、ポートフォリオとしての役割とともに、コメント機能等を介して多くの読者と交流し、開発者同士で情報交換し合うハブとすること。
             </CardDescription>
           </CardHeader>
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle></CardTitle>
+            <CardTitle>製作者プロフィール</CardTitle>
             <CardDescription>
+              名前：きぽ
+              仕事：求職中
+              スキル：JavaScript、Python、React、Node.jsなど
             </CardDescription>
           </CardHeader>
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle></CardTitle>
+            <CardTitle>ブログ</CardTitle>
             <CardDescription>
+              記事一覧へのリンクです。
             </CardDescription>
           </CardHeader>
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle></CardTitle>
+            <CardTitle>ピックアッププロジェクト</CardTitle>
             <CardDescription>
+              代表的なプロジェクトの紹介です。
             </CardDescription>
           </CardHeader>
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle></CardTitle>
+            <CardTitle>お問い合わせ</CardTitle>
             <CardDescription>
+              連絡先情報やお問い合わせフォームへのリンクです。
             </CardDescription>
           </CardHeader>
         </Card>
         <Card>
           <CardHeader>
-            <CardTitle></CardTitle>
+            <CardTitle>ご支援を頂ける方へ</CardTitle>
             <CardDescription>
+              サイト運営のための支援方法についての案内です。
             </CardDescription>
           </CardHeader>
         </Card>
