@@ -17,8 +17,8 @@ export default function Home() {
       <div className="grid grid-cols-3 gap-4 m-4">
         <Card>
           <CardHeader>
-            <CardTitle>about this website</CardTitle>
-            <CardDescription>this is my personal website.
+            <CardTitle>本サイトについて</CardTitle>
+            <CardDescription className="line">目的：技術ブログ、ポートフォリオとしての役割とともに、コメント機能等を介して多くの読者と交流し、開発者同士で情報交換し合うハブとすること。
             </CardDescription>
           </CardHeader>
         </Card>
