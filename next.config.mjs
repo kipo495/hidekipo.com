@@ -1,7 +1,20 @@
 /** @type {import('next').NextConfig} */
+import path from 'path';
+
 const nextConfig = {
+    reactStrictMode: true,
+    swcMinify: true,
+    projectRoot: path.resolve('./'),
+
     images: {
-        domains: ["images.microcms-assets.io"], // ← ここを追加！
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'images.microcms-assets.io',
+                port: '',
+                pathname: '/**',
+            },
+        ],
     },
 };
 

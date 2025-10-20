@@ -6,6 +6,7 @@ import { getBlogList } from "@/lib/microcms";
 export default async function BlogPage() {
     const data = await getBlogList();
     const blogs = data.contents;
+    console.log(blogs);
 
     return (
         <div className="p-6">
