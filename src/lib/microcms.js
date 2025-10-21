@@ -1,5 +1,5 @@
 export async function getBlogList() {
-    const domain = process.env.MICROCMS_SERVICE_DOMAIN;
+    const domain = process.env.NEXT_PUBLIC_MICROCMS_SERVICE_DOMAIN;
     const apiKey = process.env.MICROCMS_API_KEY;
     console.log(domain, apiKey)
 
