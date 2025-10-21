@@ -4,9 +4,15 @@ import Image from "next/image";
 import { getBlogList } from "@/lib/microcms";
 
 export default async function BlogPage() {
-    const data = await getBlogList();
+    let data = null;
+    try {
+        data = await getBlogList();
+    } catch (err) {
+        console.error(err);
+        return <p>ブログデータの取得に失敗しました。</p>;
+    }
     const blogs = data.contents;
-    console.log(blogs);
+    console.log(blogs.map(blog => blog.title));
 
     return (
         <div className="p-6">
